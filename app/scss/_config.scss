@@ -1,0 +1,23 @@
+// Fonts
+$font: "GothamPro", sans-serif, Arial;
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+// Font  Gotham Pro	
+@include font('GothamPro', normal, 400, '../fonts/GothamPro.woff2');
+@include font('GothamPro', normal, 500, '../fonts/GothamPro-Medium.woff2');
+@include font('GothamPro', normal, 300, '../fonts/GothamPro-Light.woff2');
+@include font('GothamPro', normal, 700, '../fonts/GothamPro-Bold.woff2');
+
+// CSS
+
+html {
+	font-size: 10px;
+}
