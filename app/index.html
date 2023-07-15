@@ -6,94 +6,108 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="css/app.min.css?var=1.1">
-   <script defer src="js/app.min.js?var=1.1"></script>
+
+
+
+   <script src="libs/gsap/gsap.min.js" defer></script>
+   <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+   <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+   <script src="js/app.min.js?var=1.1" defer></script>
 </head>
 
 <body class="page-main">
 
-   <header class="header-page-main">
-      <div class="container">
-         <div class="row">
+   <div class="wrapper">
+      <div class="content">
 
-            <div class="header-page-main__logo">
-               <img src="img/logo.svg" alt="" class="header-page-main__icon">
-               <h1 class="header-page-main__title">
-                  Nakamichi
-               </h1>
-               <div class="header-page-main__sub-title">
-                  Звуковые панели с&nbsp;системой Dolby Digital и&nbsp;беспроводным сабвуфером
-               </div>
-            </div>
+         <header class="header-page-main">
+            <div class="container">
+               <div class="row">
 
-         </div>
-      </div>
-   </header>
-
-   <main>
-
-      <section class="page-main-menu">
-         <div class="container">
-            <div class="row">
-               <div class="page-main-menu-items">
-                  <a href="page-1.html" class="page-main-menu-item page-main-menu-item-1">
-                     <div class="page-main-menu-item__title">
-                        <div class="page-main-menu-item__text">Poseidon</div>
-                        <div class="page-main-menu-item__num">210</div>
+                  <div class="header-page-main__logo">
+                     <img src="img/logo.svg" alt="" class="header-page-main__icon">
+                     <h1 class="header-page-main__title">
+                        Nakamichi
+                     </h1>
+                     <div class="header-page-main__sub-title">
+                        Звуковые панели с&nbsp;системой Dolby Digital и&nbsp;беспроводным сабвуфером
                      </div>
-                     <div class="page-main-menu-item__img-wr">
-                        <img src="img/main/main-1.png" alt="" class="page-main-menu-item__img">
-                     </div>
-                  </a>
-                  <a href="" class="page-main-menu-item page-main-menu-item-2">
-                     <div class="page-main-menu-item__title">
-                        <div class="page-main-menu-item__text">Apollo</div>
-                        <div class="page-main-menu-item__num">220</div>
-                     </div>
-                     <div class="page-main-menu-item__img-wr">
-                        <img src="img/main/main-2.png" alt="" class="page-main-menu-item__img">
-                     </div>
-                  </a>
-                  <a href="" class="page-main-menu-item page-main-menu-item-3">
-                     <div class="page-main-menu-item__title">
-                        <div class="page-main-menu-item__text">Apollo</div>
-                        <div class="page-main-menu-item__num">520</div>
-                     </div>
-                     <div class="page-main-menu-item__img-wr">
-                        <img src="img/main/main-3.png" alt="" class="page-main-menu-item__img">
-                     </div>
-                  </a>
-                  <a href="" class="page-main-menu-item page-main-menu-item-2">
-                     <div class="page-main-menu-item__title">
-                        <div class="page-main-menu-item__text">Apollo</div>
-                        <div class="page-main-menu-item__num">550</div>
-                     </div>
-                     <div class="page-main-menu-item__img-wr">
-                        <img src="img/main/main-4.png" alt="" class="page-main-menu-item__img">
-                     </div>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <section class="page-main-offer-text">
-         <div class="container">
-            <div class="row">
-               <div class="page-main-offer-text__wr">
-                  <img class="page-main-offer-text__logo" src="img/logo.svg" alt="">
-                  <div class="page-main-offer-text__text">
-                     Строгий и&nbsp;неброский дизайн идеально подходит под любой интерьер
-                     и&nbsp;прекрасно сочетается с&nbsp;внешним видом большинства современных телевизоров, Hi-Fi
-                     систем и&nbsp;&laquo;звуковой&raquo; мебели.
                   </div>
-                  <img class="page-main-offer-text__img page-main-offer-text__img-1" src="img/main/main-5.png" alt="">
-                  <img class="page-main-offer-text__img page-main-offer-text__img-2" src="img/main/main-6.png" alt="">
+
                </div>
             </div>
-         </div>
-      </section>
+         </header>
 
-   </main>
+         <main>
+
+            <section class="page-main-menu">
+               <div class="container">
+                  <div class="row">
+                     <div class="page-main-menu-items">
+                        <a class="page-main-menu-item page-main-menu-item-1">
+                           <div class="page-main-menu-item__title">
+                              <div class="page-main-menu-item__text">Poseidon</div>
+                              <div class="page-main-menu-item__num">210</div>
+                           </div>
+                           <div class="page-main-menu-item__img-wr">
+                              <img src="img/main/main-1.png" alt="" class="page-main-menu-item__img ">
+                           </div>
+                        </a>
+                        <a href="apollo-220.html" class="page-main-menu-item page-main-menu-item-2">
+                           <div class="page-main-menu-item__title">
+                              <div class="page-main-menu-item__text">Apollo</div>
+                              <div class="page-main-menu-item__num">220</div>
+                           </div>
+                           <div class="page-main-menu-item__img-wr">
+                              <img src="img/main/main-2.png" alt="" class="page-main-menu-item__img">
+                           </div>
+                        </a>
+                        <a href="" class="page-main-menu-item page-main-menu-item-3">
+                           <div class="page-main-menu-item__title">
+                              <div class="page-main-menu-item__text">Apollo</div>
+                              <div class="page-main-menu-item__num">520</div>
+                           </div>
+                           <div class="page-main-menu-item__img-wr">
+                              <img src="img/main/main-3.png" alt="" class="page-main-menu-item__img">
+                           </div>
+                        </a>
+                        <a href="" class="page-main-menu-item page-main-menu-item-2">
+                           <div class="page-main-menu-item__title">
+                              <div class="page-main-menu-item__text">Apollo</div>
+                              <div class="page-main-menu-item__num">550</div>
+                           </div>
+                           <div class="page-main-menu-item__img-wr">
+                              <img src="img/main/main-4.png" alt="" class="page-main-menu-item__img">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="page-main-offer-text">
+               <div class="container">
+                  <div class="row">
+                     <div class="page-main-offer-text__wr">
+                        <img class="page-main-offer-text__logo" src="img/logo.svg" alt="">
+                        <div class="page-main-offer-text__text">
+                           Строгий и&nbsp;неброский дизайн идеально подходит под любой интерьер
+                           и&nbsp;прекрасно сочетается с&nbsp;внешним видом большинства современных телевизоров, Hi-Fi
+                           систем и&nbsp;&laquo;звуковой&raquo; мебели.
+                        </div>
+                        <img class="page-main-offer-text__img page-main-offer-text__img-1" src="img/main/main-5.png"
+                           alt="">
+                        <img class="page-main-offer-text__img page-main-offer-text__img-2" src="img/main/main-6.png"
+                           alt="">
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+         </main>
+
+      </div>
+   </div>
 
 </body>
 
