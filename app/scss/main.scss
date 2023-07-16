@@ -8,6 +8,10 @@
      @return $value / $size * 100vw;
 }
 
+a {
+     text-decoration: none;
+}
+
 body {
      background-color: #fff;
      overflow-x: hidden;
@@ -59,13 +63,64 @@ body {
      overflow: hidden;
 }
 
+.menu {
+     position: absolute;
+     right: vw(45, 1000);
+     z-index: 10;
+     top: vw(50, 1000);
+
+     @media (max-width: 800px) {
+          top: vw(15, 800);
+     }
+}
+
+.menu__ul {
+     display: flex;
+     gap: vw(80, 1000);
+}
+
+.menu__li {
+     font-size: vw(14, 1000);
+     list-style-type: none;
+}
+
+.menu__active {
+     color: var(--color-red);
+     border-bottom: vw(5, 1000) solid var(--color-red);
+     padding-bottom: vw(3, 1000);
+}
+
+.menu__active a {
+     font-weight: 500;
+     color: var(--color-red);
+}
+
+.menu__link {
+     color: #000;
+     font-size: vw(14, 1000);
+     transition: all .1s ease-in-out;
+
+     @media (max-width: 800px) {
+          font-size: vw(14, 800);
+     }
+
+     @media (max-width: 400px) {
+          font-size: vw(10, 400);
+     }
+}
+
+.menu__link:hover {
+     color: var(--color-red);
+     transition: all .1s ease-in-out;
+}
+
 .apollo-section {
-     padding-top: vw(80, 1000);
+     padding-top: vw(120, 1000);
      padding-bottom: vw(44, 1000);
      background: linear-gradient(0deg, rgba(220, 234, 255, 0.2) 0.45%, rgba(9, 27, 53, 0.2) 26.09%, rgba(62, 91, 134, 0) 32.54%), linear-gradient(163deg, rgb(169, 200, 220) 0px, rgba(222, 231, 236, 0) 100%), rgb(160, 183, 204);
 
      @media (max-width: 800px) {
-          padding-top: vw(21, 640);
+          padding-top: vw(50, 640);
           padding-bottom: vw(50, 640);
      }
 }
@@ -75,7 +130,7 @@ body {
      flex-direction: column;
      gap: vw(20, 1000);
      position: absolute;
-     top: vw(20, 1000);
+     top: vw(50, 1000);
 
      @media (max-width: 800px) {
           position: relative;
@@ -1416,8 +1471,8 @@ body {
      transform: translateY(0);
 
      @media (max-width: 992px) {
-         width: 0;
-         height: 0;
+          width: 0;
+          height: 0;
      }
 }
 
@@ -1540,7 +1595,7 @@ body {
 
      @media (max-width: 992px) {
           display: none;
-      }
+     }
 }
 
 .page-main-offer-text__img-2 {
@@ -1584,6 +1639,14 @@ body {
 .footer-main-page {
      font-size: vw(14, 1670);
      padding-bottom: vw(50, 1670);
+
+     @media (max-width: 800px) {
+          font-size: vw(14, 800);
+     }
+
+     @media (max-width: 400px) {
+          font-size: vw(14, 400);
+     }
 }
 
 .footer-main-page__row {
@@ -1595,8 +1658,16 @@ body {
      list-style-type: none;
      margin-bottom: vw(10, 1670);
 }
+
 .footer-main-page__link {
      color: #000;
      text-decoration: none;
-}
 
+     @media (max-width: 800px) {
+          font-size: vw(14, 800);
+     }
+
+     @media (max-width: 400px) {
+          font-size: vw(10, 400);
+     }
+}
