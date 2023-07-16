@@ -1414,6 +1414,11 @@ body {
      background-color: #fff;
      z-index: 10;
      transform: translateY(0);
+
+     @media (max-width: 992px) {
+         width: 0;
+         height: 0;
+     }
 }
 
 .animate-1::before {
@@ -1529,9 +1534,13 @@ body {
 }
 
 .page-main-offer-text__img-1 {
-     bottom: vw(-230, 1670);
+     bottom: vw(-130, 1670);
      left: 0;
      width: vw(400, 1670);
+
+     @media (max-width: 992px) {
+          display: none;
+      }
 }
 
 .page-main-offer-text__img-2 {
@@ -1539,3 +1548,55 @@ body {
      right: 0;
      width: vw(310, 1670);
 }
+
+.gallery-img__img {
+     width: 100%;
+}
+
+.gallery-img__img-wr {
+     margin-bottom: vw(65, 1670);
+     display: block;
+     width: 100%;
+}
+
+.gallery-img-1 {
+     background-image: url(../img/cursour/curs-apollo-550.png);
+     opacity: 1 !important;
+     transition: opacity .3s ease-in-out;
+}
+
+.gallery-img-2 {
+     background-image: url(../img/cursour/curs-apollo-520.png);
+     opacity: 1 !important;
+     transition: opacity .3s ease-in-out;
+}
+
+.gallery-img-3 {
+     background-image: url(../img/cursour/curs-apollo-220.png);
+     opacity: 1 !important;
+     transition: opacity .3s ease-in-out;
+}
+
+.gallery-img .row a:hover {
+     cursor: none;
+}
+
+.footer-main-page {
+     font-size: vw(14, 1670);
+     padding-bottom: vw(50, 1670);
+}
+
+.footer-main-page__row {
+     display: flex;
+     gap: vw(200, 1670);
+}
+
+.footer-main-page__li {
+     list-style-type: none;
+     margin-bottom: vw(10, 1670);
+}
+.footer-main-page__link {
+     color: #000;
+     text-decoration: none;
+}
+
