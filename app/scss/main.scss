@@ -2871,7 +2871,7 @@ body {
      }
 
      @media (max-width: 800px) {
-          height: vw(900, 640);
+          height: vw(650, 640);
 
           &__text {
                right: 0;
@@ -2973,6 +2973,7 @@ body {
 .section-hdmi {
      margin-inline: vw(45, 1000);
      margin-top: vw(55, 1000);
+     margin-bottom: vw(40, 1000);
 
      @media (max-width: 800px) {
           margin-inline: vw(20, 640);
@@ -2985,6 +2986,7 @@ body {
 
 .section-hdmi__flex {
      display: flex;
+     align-items: flex-start;
 
      &__text {
           margin-right: vw(60, 1000);
@@ -3009,7 +3011,6 @@ body {
      @media (max-width: 800px) {
 
           &__text {
-               margin-right: vw(60, 400);
 
                &-header {
                     font-size: vw(30, 640);
@@ -3030,7 +3031,6 @@ body {
      @media (max-width: 400px) {
 
           &__text {
-               margin-right: vw(60, 400);
 
                &-header {
                     font-size: vw(20, 400);
@@ -3062,18 +3062,11 @@ body {
 }
 
 .page-apollo550-bg {
-     margin-top: vw(20, 1000);
      position: relative;
-     height: vw(370, 1000);
+}
 
-     &-img {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-     }
+.page-apollo550-bg img {
+     width: 100%;
 }
 
 .uinder-text {
@@ -3095,6 +3088,11 @@ body {
 
      &__item3 {
           width: vw(230, 1000);
+
+
+          p:nth-child(1) {
+               margin-bottom: vw(30, 1000);
+          }
      }
 
      @media (max-width: 800px) {
@@ -3113,6 +3111,7 @@ body {
           &__item3 {
                display: flex;
                width: 100%;
+               gap: vw(30, 800);
           }
      }
 
@@ -3169,8 +3168,8 @@ body {
      margin-left: vw(370, 1000);
 
      &__item-1 {
-          height: auto;
-          width: auto;
+          height: vw(23, 1000);
+          width: vw(36, 1000);
      }
 
      &__item-2 {
@@ -3355,6 +3354,7 @@ body {
           display: flex;
           align-items: flex-end;
           margin-left: vw(190, 1000);
+          margin-top: vw(-130, 1000);
 
           &-text {
                margin-right: vw(20, 1000);
@@ -3692,7 +3692,7 @@ body {
 
 .subuffer-apollo550 {
      position: relative;
-     height: vw(780, 1000);
+     height: vw(600, 1000);
 
      &__img {
           position: absolute;
@@ -3720,7 +3720,7 @@ body {
      @media (max-width: 800px) {
           &__img {
                right: vw(-90, 640);
-               top: vw(-200, 640);
+               top: vw(-170, 640);
           }
 
           &__text {
@@ -3761,4 +3761,20 @@ body {
                }
           }
      }
+}
+
+.sounding-section-3 {
+     padding-bottom: vw(100, 1000);
+}
+
+.sounding-section-3__img {
+     margin-top: vw(-350, 1000) !important;
+
+     @media (max-width : 800px) {
+          margin-top: vw(-250, 800) !important;
+      }
+}
+
+.sounding-section-3__text {
+     width: vw(665, 1000);
 }
