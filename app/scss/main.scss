@@ -260,19 +260,16 @@ body {
 
 .second-section {
      position: relative;
-     height: vw(535, 1000);
      z-index: 0;
+     background-color: #9C9284;
 }
 
 .second-section-image {
-     position: absolute;
      z-index: 1;
-     left: 0;
-     top: 0;
-     width: vw(1026, 1000);
-     object-position: center;
-     object-fit: cover;
-
+     width: vw(500, 1000);
+     margin: 0 auto;
+     padding-top: vw(30, 1000);
+     padding-bottom: vw(80, 1000);
      @media (max-width: 400px) {
           width: 100%;
      }
@@ -285,8 +282,8 @@ body {
 .second-section-position {
      position: absolute;
      z-index: 3;
-     left: vw(200, 1000);
-     bottom: vw(20, 1000);
+     left: vw(290, 1000);
+     bottom: vw(40, 1000);
      border-radius: 7px;
      width: vw(410, 1000);
      background: rgba(255, 255, 255, 0.80);
