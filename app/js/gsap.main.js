@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
    if (window.innerWidth > 992) {
 
       gsap.to(".page-main-offer-text__img-2", {
-         y: 250,
+         y: 450,
          transition: "linear",
          scrollTrigger: {
             trigger: ".page-main-offer-text",
@@ -13,8 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
          }
       })
 
+      gsap.to(".page-main-offer-text__wr", {
+         y: 250,
+         transition: "linear",
+         scrollTrigger: {
+            trigger: ".page-main-offer-text",
+            start: "top 40%",
+            end: "bottom 100%",
+            scrub: 1,
+         }
+      })
+
       gsap.to(".page-main-offer-text__img-1", {
-         y: 150,
+         y: 250,
          transition: "linear",
          scrollTrigger: {
             trigger: ".page-main-offer-text",
@@ -34,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       tl.to(".page-main-offer-text__text-bgc", {
-         y: 80,
+         y: -80,
          duration: 2,
          ease: "linear"
       })

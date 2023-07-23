@@ -71,7 +71,7 @@ body {
      position: absolute;
      right: vw(45, 1000);
      z-index: 10;
-     top: vw(57, 1000);
+     top: vw(73, 1000);
 
      @media (max-width: 800px) {
           top: vw(15, 800);
@@ -147,7 +147,7 @@ body {
 }
 
 .apollo-logo-img {
-     width: vw(56, 1000);
+     width: vw(88, 1000);
 
      @media (max-width: 800px) {
           width: vw(94, 640);
@@ -270,6 +270,7 @@ body {
      margin: 0 auto;
      padding-top: vw(30, 1000);
      padding-bottom: vw(80, 1000);
+
      @media (max-width: 400px) {
           width: 100%;
      }
@@ -282,20 +283,23 @@ body {
 .second-section-position {
      position: absolute;
      z-index: 3;
-     left: vw(290, 1000);
-     bottom: vw(40, 1000);
+     left: vw(160, 1000);
+     bottom: vw(30, 1000);
      border-radius: 7px;
      width: vw(410, 1000);
      background: rgba(255, 255, 255, 0.80);
      backdrop-filter: blur(2px);
 
      @media (max-width: 800px) {
-          width: vw(283, 640);
-          bottom: vw(28, 640);
+          width: vw(320, 640);
+          bottom: vw(5, 640);
+          left: vw(50, 640);
      }
 
      @media (max-width: 400px) {
           width: vw(283, 400);
+          left: vw(0, 400);
+          bottom: vw(30, 640);
      }
 
 }
@@ -324,6 +328,10 @@ body {
 .second-section-pb {
      font-weight: bold;
      line-height: 130%;
+
+     @media (max-width: 800px) {
+          font-size: vw(11, 640);
+     }
 
      @media (max-width: 400px) {
           font-size: vw(11, 400);
@@ -1483,8 +1491,15 @@ body {
      grid-template-columns: repeat(4, 1fr);
      gap: vw(15, 1670);
 
-     @media (max-width: 400px) {
+     @media (max-width: 500px) {
           grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+.page-main-menu-item:nth-child(1),
+.page-main-menu-item:nth-child(2) {
+     @media (max-width: 500px) {
+          margin-bottom: vw(10, 500);
      }
 }
 
@@ -1497,8 +1512,8 @@ body {
      background-color: #D9D9D9;
      text-decoration: none;
 
-     @media (max-width: 400px) {
-          height: vw(210, 400);
+     @media (max-width: 500px) {
+          height: vw(300, 500);
      }
 }
 
@@ -1577,9 +1592,9 @@ body {
      font-size: vw(105, 1670);
      line-height: vw(80, 1670);
 
-     @media (max-width: 400px) {
-          font-size: vw(55, 400);
-          line-height: vw(55, 400);
+     @media (max-width: 500px) {
+          font-size: vw(66, 500);
+          line-height: vw(66, 500);
      }
 }
 
@@ -1591,9 +1606,9 @@ body {
      font-size: vw(75, 1670);
      line-height: vw(80, 1670);
 
-     @media (max-width: 400px) {
-          font-size: vw(38, 400);
-          line-height: vw(40, 400);
+     @media (max-width: 500px) {
+          font-size: vw(38, 500);
+          line-height: vw(40, 500);
      }
 }
 
@@ -1601,9 +1616,9 @@ body {
      font-size: vw(120, 1670);
      line-height: vw(120, 1670);
 
-     @media (max-width: 400px) {
-          font-size: vw(55, 400);
-          line-height: vw(55, 400);
+     @media (max-width: 500px) {
+          font-size: vw(70, 500);
+          line-height: vw(70, 500);
      }
 }
 
@@ -1616,13 +1631,23 @@ body {
 
 .page-main-menu-item__img {
      width: 100%;
+     transition: all .3s ease-in-out;
+}
+
+.page-main-menu-item:hover .page-main-menu-item__img {
+     scale: 1.1;
+     transition: all .3s ease-in-out;
 }
 
 .page-main-offer-text {
-     padding-bottom: vw(300, 1670);
+     padding-bottom: vw(600, 1670);
      position: relative;
 
-     @media (max-width: 400px) {
+     @media (max-width: 992px) {
+          padding-bottom: vw(30, 400);
+     }
+
+     @media (max-width: 992px) {
           padding-bottom: vw(30, 400);
      }
 }
@@ -1673,6 +1698,10 @@ body {
      z-index: 1;
      opacity: 0;
      transition: all .3s ease-in-out 3s;
+
+     @media (max-width: 500px) {
+          opacity: 1;
+     }
 }
 
 .page-main-offer-text__img-active {
@@ -1694,13 +1723,20 @@ body {
      top: 0;
      right: 0;
      width: vw(310, 1670);
+
+     @media (max-width: 500px) {
+          top: vw(120, 500);
+     }
 }
 
 .gallery-img__img {
      width: 100%;
+     height: 100%;
+     object-fit: fill;
+     object-position: top;
      transition: all .3s ease-in-out;
 
-     @media (max-width: 400px) {
+     @media (max-width: 992px) {
           display: none;
      }
 }
@@ -1709,13 +1745,22 @@ body {
      margin-bottom: vw(65, 1670);
      display: block;
      width: 100%;
-     overflow: hidden;
-     border-radius: 11px;
+     height: vw(830, 1670);
 }
 
-.gallery-img__img-wr:hover .gallery-img__img {
-     scale: 1.1;
+.gallery-img__img-element {
+     height: vw(300, 1670);
      transition: all .3s ease-in-out;
+}
+
+.gallery-img__img-element:hover {
+     height: vw(830, 1670);
+     transition: all .3s ease-in-out;
+}
+
+.gallery-img__img-element {
+     overflow: hidden;
+     border-radius: 11px;
 }
 
 .gallery-img-1 {
@@ -1812,7 +1857,8 @@ body {
 }
 
 .page-apollo520-header {
-     margin-top: vw(21, 1000);
+     position: relative;
+     margin-top: vw(60, 1000);
      margin-left: vw(45, 1000);
      margin-right: vw(71, 1000);
      margin-bottom: vw(37, 1000);
@@ -1829,7 +1875,7 @@ body {
 
           &-h-red {
                color: #EA1C26;
-               font-weight: 700;
+               font-weight: 500;
                font-size: vw(30, 1000);
           }
 
@@ -1838,6 +1884,10 @@ body {
                font-size: vw(14, 1000);
                width: vw(335, 1000);
           }
+     }
+
+     a img {
+          width: vw(56, 1000);
      }
 
      @media (max-width: 800px) {
@@ -3806,11 +3856,11 @@ body {
 
 .subuffer-apollo550 {
      position: relative;
-     height: vw(600, 1000);
+     height: vw(470, 1000);
 
      &__img {
           position: absolute;
-          width: vw(650, 1000);
+          width: vw(550, 1000);
           right: vw(-50, 1000);
           top: vw(-300, 1000);
           transform: translateX(200px);
@@ -3900,14 +3950,14 @@ body {
 
 .page-apollo520-header {
      .menu {
-          top: vw(15, 1000);
+          top: vw(7, 1000);
 
           @media (max-width : 800px) {
-               top: vw(55, 800);
+               top: vw(0, 800);
           }
 
           @media (max-width : 400px) {
-               top: vw(75, 800);
+               top: vw(0, 800);
           }
      }
 
@@ -3944,6 +3994,6 @@ body {
      }
 }
 
-.section-footbol-2 .second-section{
+.section-footbol-2 .second-section {
      height: vw(620, 1000);
 }
