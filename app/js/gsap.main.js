@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
             start: "top 50%",
             end: "bottom 100%",
             scrub: 2,
+            once: true
+         }
+      })
+
+      gsap.to(".page-main-offer-text__img-1", {
+         y: 250,
+         transition: "linear",
+         scrollTrigger: {
+            trigger: ".page-main-offer-text",
+            start: "top 90%",
+            end: "bottom 100%",
+            scrub: 2,
+            once: true
          }
       })
 
@@ -21,17 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             start: "top 40%",
             end: "bottom 100%",
             scrub: 1,
-         }
-      })
-
-      gsap.to(".page-main-offer-text__img-1", {
-         y: 250,
-         transition: "linear",
-         scrollTrigger: {
-            trigger: ".page-main-offer-text",
-            start: "top 80%",
-            end: "bottom 100%",
-            scrub: 2,
+            once: true
          }
       })
 
@@ -41,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             start: "top 60%",
             end: "bottom 100%",
             scrub: 2,
+            once: true
          }
       });
 
@@ -64,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             start: "top 28%",
             end: "bottom 80%",
             scrub: 1,
+            once: true
          }
       })
 

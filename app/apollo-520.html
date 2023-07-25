@@ -11,12 +11,12 @@
 
     <link rel="icon" href="img/logo.svg">
 
-    <link rel="stylesheet" href="css/app.min.css?var=2">
+    <link rel="stylesheet" href="css/app.min.css?var=5">
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="js/app.min.js?var=2" defer></script>
-    <script src="js/gsap.apollo-520.js?var=2" defer></script>
+    <script src="js/app.min.js?var=5" defer></script>
+    <script src="js/gsap.apollo-520.js?var=5" defer></script>
 </head>
 
 <body>
@@ -30,18 +30,24 @@
                     <div class="menu">
                         <nav class="menu__nav">
                             <ul class="menu__ul">
-                                <li class="menu__li"><a class="menu__link" href="">Poseidon 210</a></li>
+                                <li class="menu__li">
+                                    <div class="menu__link">Poseidon 210</div>
+                                </li>
                                 <li class="menu__li">
                                     <a class="menu__link" href="apollo-220.html">Apollo 220</a>
                                 </li>
-                                <li class="menu__li menu__active"><a class="menu__link">Apollo
-                                        520</a></li>
-                                <li class="menu__li"><a class="menu__link" href="apollo-550.html">Apollo
-                                        550</a></li>
+                                <li class="menu__li menu__active">
+                                    <a class="menu__link">Apollo 520</a>
+                                </li>
+                                <li class="menu__li">
+                                    <a class="menu__link" href="apollo-550.html">Apollo 550</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
-                    <a href="/"><img src="img/logo.svg" /></a>
+                    <a href="/">
+                        <img class="page-apollo520-header__logo" src="img/logo.svg" />
+                    </a>
                     <div class="page-apollo520-header__title">
                         <h1 class="page-apollo520-header__title-h-red">
                             Nakamichi Apollo 520
@@ -76,7 +82,6 @@
                         Монтажные элементы крепления на&nbsp;стену имеются в&nbsp;комплекте.
                     </p>
                 </section>
-
 
                 <section class="page-apollo520-hdmi">
 
@@ -258,28 +263,24 @@
 
                 <section class="section-footbol">
                     <h2 class="section-footbol__header">Подключите игровую приставку</h2>
-                    <div class="second-section">
-                        <div class="row">
-                            <img class="second-section-image" src="img/footbol.png" />
-                        </div>
+                    <div class="section-footbol__wr">
+                        <img class="section-footbol__img" src="img/footbol.png" />
                     </div>
                 </section>
 
                 <section class="section-underfoot">
-                    <div class="second-section">
-                        <div class="row">
-                            <img class="second-section-image second-section-image-2" src="img/apollo520fot.png" />
-                            <div class="section-underfoot__content">
-                                <img src="img/Black.png" />
-                                <p>
-                                    Подключите к&nbsp;саундбару Apollo 520 игровую приставку
-                                    и&nbsp;почувствуйте себя полноценным участником чемпионата FIFA
-                                    или пилотом скоростного болида в&nbsp;Formula-1,
-                                    благодаря трехмерному звуку и&nbsp;стереоэффектам.
-                                </p>
-                            </div>
-                        </div>
+
+                    <img class="second-section-image-2" src="img/apollo520fot.png" />
+                    <div class="section-underfoot__content">
+                        <img src="img/Black.png" />
+                        <p>
+                            Подключите к&nbsp;саундбару Apollo 520 игровую приставку
+                            и&nbsp;почувствуйте себя полноценным участником чемпионата FIFA
+                            или пилотом скоростного болида в&nbsp;Formula-1,
+                            благодаря трехмерному звуку и&nbsp;стереоэффектам.
+                        </p>
                     </div>
+
                     <div class="page-apollo520-pult">
                         <div class="page-apollo520-pult__text">
                             <p class="page-apollo520-pult__text-pm">
@@ -345,27 +346,29 @@
                 </section>
 
                 <section class="sound3d">
-                    <h2 class="sound3d__header">Настоящий 3D-звук <br> и Вы в его эпицентр</h2>
-                    <p class="sound3d__pm">
-                        С&nbsp;помощью фронтальных акустических систем цифровая система Dolby Atmos воспроизводит
-                        объемный
-                        звук,
-                        который поступает со&nbsp;всех сторон. Нет необходимости добавлять
-                        тыловые акустические системы&nbsp;&mdash; вы&nbsp;можете наслаждаться звуком, как
-                        в&nbsp;кинотеатре, не&nbsp;загромождая
-                        жилое
-                        помещение.
-                    </p>
+                    <div class="row">
+                        <h2 class="sound3d__header">Настоящий 3D-звук <br> и Вы в его эпицентр</h2>
+                        <p class="sound3d__pm">
+                            С&nbsp;помощью фронтальных акустических систем цифровая система Dolby Atmos воспроизводит
+                            объемный
+                            звук,
+                            который поступает со&nbsp;всех сторон. Нет необходимости добавлять
+                            тыловые акустические системы&nbsp;&mdash; вы&nbsp;можете наслаждаться звуком, как
+                            в&nbsp;кинотеатре, не&nbsp;загромождая
+                            жилое
+                            помещение.
+                        </p>
+                    </div>
                     <div class="sound3d__img">
                         <img src="img/sound3D.png" alt="" />
                     </div>
                 </section>
 
-                <section class="presets-section">
+                <section class="presets-section presets-section-2">
                     <div class="row">
                         <h2 class="h2-black">Эквализация представлена фиксированными пресетами:</h2>
                         <div class="presets-flex">
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-one">
                                 <img class="presets-flex-img" src="img/icon/move.svg" />
                                 <div>
                                     <p class="p-b-black">MOVIE</p>
@@ -374,7 +377,7 @@
                                         фильмов.</p>
                                 </div>
                             </div>
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-two">
                                 <img class="presets-flex-img" src="img/icon/music.svg" />
                                 <div>
                                     <p class="p-b-black">MUSIC</p>
@@ -385,7 +388,7 @@
                                         музыкальных произведений.</p>
                                 </div>
                             </div>
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-three">
                                 <img class="presets-flex-img" src="img/icon/news.svg" />
                                 <div>
                                     <p class="p-b-black">NEWS</p>
@@ -395,7 +398,7 @@
                                         прочих программ.</p>
                                 </div>
                             </div>
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-four">
                                 <img class="presets-flex-img" src="img/icon/bool.svg" />
                                 <div>
                                     <p class="p-b-black">SPORT</p>
@@ -406,11 +409,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-3">
                                 <img class="presets-flex-img" src="img/icon/sound.svg" />
                                 <div>
-                                    <p class="p-b-black">Функция объемного звучания</p>
-                                    <p class="p-black">Виртуально расширяет зону стереоэффекта.</p>
+                                    <span class="p-b-black">Функция объемного звучания -</span>
+                                    <span class="p-black">виртуально расширяет область распространения звуковых эффектов.
+                                    </span>
                                 </div>
                             </div>
                         </div>

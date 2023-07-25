@@ -10,12 +10,12 @@
 
     <link rel="icon" href="img/logo.svg">
 
-    <link rel="stylesheet" href="css/app.min.css?var=2">
+    <link rel="stylesheet" href="css/app.min.css?var=5">
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="js/app.min.js?var=2" defer></script>
-    <script src="js/gsap.apollo-550.js?var=2" defer></script>
+    <script src="js/app.min.js?var=5" defer></script>
+    <script src="js/gsap.apollo-550.js?var=5" defer></script>
 </head>
 
 <body>
@@ -28,18 +28,23 @@
                     <div class="menu">
                         <nav class="menu__nav">
                             <ul class="menu__ul">
-                                <li class="menu__li"><a class="menu__link" href="">Poseidon 210</a></li>
                                 <li class="menu__li">
-                                    <a class="menu__link" href="apollo-220.html">Apollo 220</a></li>
-                                <li class="menu__li"><a class="menu__link">Apollo
-                                        520</a></li>
-                                <li class="menu__li menu__active"><a class="menu__link" href="apollo-520.html">Apollo
-                                        550</a></li>
+                                    <div class="menu__link">Poseidon 210</div>
+                                </li>
+                                <li class="menu__li">
+                                    <a class="menu__link" href="apollo-220.html">Apollo 220</a>
+                                </li>
+                                <li class="menu__li">
+                                    <a class="menu__link" href="apollo-520.html">Apollo 520</a>
+                                </li>
+                                <li class="menu__li menu__active">
+                                    <a class="menu__link">Apollo 550</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                     <a href="/">
-                        <img src="img/logo.svg" />
+                        <img class="page-apollo520-header__logo" src="img/logo.svg" />
                     </a>
                     <div class="page-apollo520-header__title">
                         <h1 class="page-apollo520-header__title-h-red">
@@ -100,21 +105,25 @@
                             дизайна помещения.
                         </p>
                         <p class="uinder-text__item2-pm">
-                            <span class="p-black" style="font-weight: 500">Поддержка HDMI ARC и HDMI eARC</span><br> Позволяет подключаться к
+                            <span class="p-black" style="font-weight: 500">Поддержка HDMI ARC и HDMI eARC</span><br>
+                            Позволяет подключаться к
                             большинству моделей телевизоров одним кабелем.
                         </p>
                         <p class="uinder-text__item2-pm">
-                            <span class="p-black" style="font-weight: 500">Оптический канальный вход</span><br> Подключите кабель к оптическому
+                            <span class="p-black" style="font-weight: 500">Оптический канальный вход</span><br>
+                            Подключите кабель к оптическому
                             или коаксиальному входу и наслаждайтесь высоким качеством звука
                         </p>
                     </div>
                     <div class="uinder-text__item3">
                         <p>
-                            <span class="p-black" style="font-weight: 500">AUX-разъем</span> <br> Позволяет подключаться к большинству моделей
+                            <span class="p-black" style="font-weight: 500">AUX-разъем</span> <br> Позволяет подключаться
+                            к большинству моделей
                             телевизоров одним кабелем.
                         </p>
                         <p>
-                            <span class="p-black" style="font-weight: 500">порт USB</span> <br> Слушайте музыку с USB-носителей, управляя
+                            <span class="p-black" style="font-weight: 500">порт USB</span> <br> Слушайте музыку с
+                            USB-носителей, управляя
                             воспроизведением с экрана или с помощью пульта.
                         </p>
                     </div>
@@ -294,9 +303,7 @@
                 <section class="section-footbol section-footbol-2">
                     <h2 class="section-footbol__header">Подключите игровую приставку</h2>
                     <div class="second-section">
-                        <div class="row">
-                            <img class="second-section-image" src="img/footbol.png" />
-                        </div>
+                        <img class="second-section-image" src="img/footbol.png" />
                     </div>
                     <div class="section-underfoot-content">
                         <img class="section-underfoot-content__item-1" src="img/Black.png" />
@@ -326,7 +333,7 @@
                         <h2 class="h2-black">Эквализация</h2>
                         <p class="p-black mb-1">Эквализация представлена 4 фиксированными пресетами:</p>
                         <div class="presets-flex">
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-one">
                                 <img class="presets-flex-img" src="img/icon/move.svg" />
                                 <div>
                                     <p class="p-b-black">MOVIE</p>
@@ -335,7 +342,7 @@
                                         фильмов.</p>
                                 </div>
                             </div>
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-two">
                                 <img class="presets-flex-img" src="img/icon/music.svg" />
                                 <div>
                                     <p class="p-b-black">MUSIC</p>
@@ -346,7 +353,7 @@
                                         музыкальных произведений.</p>
                                 </div>
                             </div>
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-three">
                                 <img class="presets-flex-img" src="img/icon/news.svg" />
                                 <div>
                                     <p class="p-b-black">NEWS</p>
@@ -356,7 +363,7 @@
                                         прочих программ.</p>
                                 </div>
                             </div>
-                            <div class="presets-flex-item-2">
+                            <div class="presets-flex-item-2 presets-flex-item-four">
                                 <img class="presets-flex-img" src="img/icon/bool.svg" />
                                 <div>
                                     <p class="p-b-black">SPORT</p>

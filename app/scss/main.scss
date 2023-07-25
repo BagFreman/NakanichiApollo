@@ -99,6 +99,10 @@ body {
      color: var(--color-red);
 }
 
+div.menu__link:hover {
+     color: #000;
+}
+
 .menu__link {
      color: #000;
      font-size: vw(14, 1000);
@@ -268,7 +272,6 @@ body {
      z-index: 1;
      width: vw(500, 1000);
      margin: 0 auto;
-     padding-top: vw(30, 1000);
      padding-bottom: vw(80, 1000);
 
      @media (max-width: 400px) {
@@ -745,7 +748,7 @@ body {
 
      @media (max-width: 400px) {
           width: vw(230, 400);
-          margin-bottom: vw(40, 400);
+          margin-bottom: vw(20, 400);
      }
 }
 
@@ -802,12 +805,12 @@ body {
      margin-top: vw(-120, 1000);
 
      @media (max-width: 800px) {
-          margin-top: vw(50, 640);
+          margin-top: 0;
           position: absolute;
      }
 
      @media (max-width: 400px) {
-          margin-top: vw(50, 400);
+          margin-top: vw(60, 400);
           position: absolute;
      }
 }
@@ -1132,6 +1135,10 @@ body {
      }
 }
 
+.presets-section {
+     padding-bottom: vw(50, 1000);
+}
+
 .presets-section .h2-black {
      margin-bottom: vw(30, 1000);
 }
@@ -1222,7 +1229,7 @@ body {
      top: 0;
      width: 109%;
      height: auto;
-     transform: translateY(-200px);
+     transform: translateX(-200px);
 
      @media (max-width: 992px) {
           transform: translateY(0);
@@ -1480,7 +1487,7 @@ body {
      width: vw(544, 1670);
      margin-left: vw(310, 1670);
 
-     @media (max-width: 400px) {
+     @media (max-width: 500px) {
           font-size: vw(11, 400);
           width: vw(800, 400);
      }
@@ -1640,7 +1647,8 @@ body {
 }
 
 .page-main-offer-text {
-     padding-bottom: vw(600, 1670);
+     height: vw(1300, 1670);
+     padding-bottom: vw(100, 1670);
      position: relative;
 
      @media (max-width: 992px) {
@@ -1710,7 +1718,7 @@ body {
 }
 
 .page-main-offer-text__img-1 {
-     bottom: vw(-130, 1670);
+     bottom: vw(-180, 1670);
      left: 0;
      width: vw(400, 1670);
 
@@ -1731,8 +1739,7 @@ body {
 
 .gallery-img__img {
      width: 100%;
-     height: 100%;
-     object-fit: fill;
+     height: vw(830, 1670);
      object-position: top;
      transition: all .3s ease-in-out;
 
@@ -1858,9 +1865,9 @@ body {
 
 .page-apollo520-header {
      position: relative;
-     margin-top: vw(60, 1000);
+     margin-top: vw(43, 1000);
      margin-left: vw(45, 1000);
-     margin-right: vw(71, 1000);
+     margin-right: vw(45, 1000);
      margin-bottom: vw(37, 1000);
 
      &__logo {
@@ -1869,7 +1876,7 @@ body {
      }
 
      &__title {
-          margin-top: vw(11, 1000);
+          margin-top: vw(34, 1000);
           display: flex;
           justify-content: space-between;
 
@@ -1884,10 +1891,6 @@ body {
                font-size: vw(14, 1000);
                width: vw(335, 1000);
           }
-     }
-
-     a img {
-          width: vw(56, 1000);
      }
 
      @media (max-width: 800px) {
@@ -2159,7 +2162,7 @@ body {
 
 .page-apollo520-bg-text {
      display: flex;
-     justify-content: space-between;
+     gap: vw(63, 1000);
      align-items: flex-start;
      margin-top: vw(70, 1000);
      margin-inline: vw(45, 1000);
@@ -2684,6 +2687,7 @@ body {
 
 .section-underfoot {
      position: relative;
+     margin-top: vw(-20, 1000);
 
      &__content {
           position: absolute;
@@ -2723,6 +2727,10 @@ body {
                font-size: vw(11, 400);
           }
      }
+}
+
+.section-underfoot .second-section-image-2 {
+     width: 100%;
 }
 
 .page-apollo520-pult {
@@ -2893,7 +2901,6 @@ body {
 
 .sound3d {
      margin-top: vw(50, 1000);
-     margin-inline: vw(45, 1000);
      margin-bottom: vw(70, 1000);
 
      &__header {
@@ -3028,13 +3035,10 @@ body {
           height: vw(650, 640);
 
           &__text {
+               margin-right: vw(20, 640);
                right: 0;
-               bottom: vw(-120, 1000);
-               width: vw(400, 1000);
-
-               &-header {
-                    display: none;
-               }
+               bottom: vw(-60, 640);
+               width: vw(300, 640);
 
                &-pm {
                     font-size: vw(14, 640);
@@ -3368,10 +3372,22 @@ body {
                width: vw(460, 1000);
                height: vw(310, 1000);
                margin-right: vw(30, 1000);
+
+               transform: translateX(-200px);
+
+               @media (max-width: 992px) {
+                    transform: translateX(0);
+               }
           }
 
           &__img-2 {
                width: vw(515, 1000);
+
+               transform: translateX(200px);
+
+               @media (max-width: 992px) {
+                    transform: translateX(0);
+               }
           }
      }
 
@@ -3382,10 +3398,22 @@ body {
           &__img-1 {
                width: vw(515, 1000);
                margin-right: vw(30, 1000);
+
+               transform: translateX(-200px);
+
+               @media (max-width: 992px) {
+                    transform: translateX(0);
+               }
           }
 
           &__img-2 {
                width: vw(515, 1000);
+
+               transform: translateX(200px);
+
+               @media (max-width: 992px) {
+                    transform: translateX(0);
+               }
           }
      }
 
@@ -3950,7 +3978,8 @@ body {
 
 .page-apollo520-header {
      .menu {
-          top: vw(7, 1000);
+          top: vw(24, 1000);
+          right: 0;
 
           @media (max-width : 800px) {
                top: vw(0, 800);
@@ -3996,4 +4025,134 @@ body {
 
 .section-footbol-2 .second-section {
      height: vw(620, 1000);
+}
+
+.section-footbol-2 .second-section-image {
+     width: 100%;
+     height: 100%;
+     padding-top: 0;
+     padding-bottom: 0;
+}
+
+.page-apollo520-header__logo {
+     width: vw(88, 1000);
+}
+
+.section-footbol__img {
+     width: 100%;
+}
+
+.presets-flex-item-3 {
+     width: vw(450, 1000);
+}
+
+.connect-phone-text-anim {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.smart-speaker-text-item1 {
+     transform: translateX(-200px);
+
+     @media (max-width : 992px) {
+          transform: translateX(0);
+     }
+}
+
+.control-section-buttoms-img {
+     transform: translateX(-200px);
+
+     @media (max-width : 992px) {
+          transform: translateX(0);
+     }
+}
+
+.presets-flex-item-one,
+.presets-flex-item-two,
+.presets-flex-item-three,
+.presets-flex-item-four {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.sounding-position-items {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.items2-watch-move {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.sub-section-img {
+     transform: translateX(300px);
+
+     @media (max-width : 992px) {
+          transform: translateX(0);
+     }
+}
+
+.page-apollo520-connect-phone-text {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.page-apollo520-connect-col__img {
+     transform: translateX(200px);
+
+     @media (max-width : 992px) {
+          transform: translateX(0);
+     }
+}
+
+.page-apollo520-connect-col__text {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.sounding-position-items-2 {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.presets-section-2 {
+     padding-bottom: vw(135, 1000);
+}
+
+.power-apollo-550__text2 {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
+}
+
+.subuffer-apollo550__text, .sub-apollo550__text {
+     transform: translateY(200px);
+
+     @media (max-width : 992px) {
+          transform: translateY(0);
+     }
 }
