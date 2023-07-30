@@ -2,32 +2,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
    if (window.innerWidth > 992) {
 
-      gsap.to(".page-main-offer-text__img-2", {
-         y: 450,
+      gsap.to(".page-main-offer-text__wr", {
+         y: '60vw',
          transition: "linear",
          scrollTrigger: {
             trigger: ".page-main-offer-text",
-            start: "top 50%",
+            start: "top 40%",
             end: "bottom 100%",
-            scrub: 2,
+            scrub: 1,
             once: true
          }
       })
 
       gsap.to(".page-main-offer-text__img-1", {
-         y: 250,
+         bottom: '70vw',
          transition: "linear",
          scrollTrigger: {
             trigger: ".page-main-offer-text",
-            start: "top 90%",
+            start: "top 40%",
             end: "bottom 100%",
-            scrub: 2,
+            scrub: 1,
             once: true
          }
       })
 
-      gsap.to(".page-main-offer-text__wr", {
-         y: 250,
+      gsap.to(".page-main-offer-text__img-2", {
+         top: '40vw',
          transition: "linear",
          scrollTrigger: {
             trigger: ".page-main-offer-text",
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       gsap.to(".page-main-offer-text__img", {
          opacity: 1,
-         duration: 0.5,
+         duration: 1,
          transition: "linear",
          scrollTrigger: {
             trigger: ".page-main-offer-text",
@@ -131,6 +131,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
    galleryImg3.addEventListener('mouseout', function () {
       customCursor.classList.remove('gallery-img-3');
+   });
+
+
+   const elements = document.querySelectorAll('.gallery-img__img-element');
+
+   elements.forEach(function (element) {
+      element.addEventListener('mouseover', function () {
+         element.classList.add('gallery-img__img-element-active');
+      });
    });
 
 })

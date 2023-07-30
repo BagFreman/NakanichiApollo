@@ -11,5 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
    })
 
+   window.addEventListener('load', function() {
+      document.body.style.visibility = 'visible';
+    });
+
 })
 

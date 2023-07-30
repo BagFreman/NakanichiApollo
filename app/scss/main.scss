@@ -18,6 +18,7 @@ body {
      font-family: $font;
      font-size: vw(14, 1000);
      color: #000;
+     visibility: hidden;
 
      @media (max-width: 800px) {
           font-size: vw(14, 640);
@@ -1647,7 +1648,7 @@ div.menu__link:hover {
 }
 
 .page-main-offer-text {
-     height: vw(1300, 1670);
+     height: vw(1600, 1670);
      padding-bottom: vw(100, 1670);
      position: relative;
 
@@ -1672,6 +1673,8 @@ div.menu__link:hover {
 .page-main-offer-text__logo {
      width: vw(126, 1670);
      margin-bottom: vw(40, 1670);
+     position: relative;
+     z-index: 2;
 }
 
 .page-main-offer-text__text {
@@ -1679,6 +1682,7 @@ div.menu__link:hover {
      color: #777777;
      position: relative;
      z-index: 2;
+     width: vw(1421, 1670);
 }
 
 .page-main-offer-text__text-item {
@@ -1704,7 +1708,6 @@ div.menu__link:hover {
 .page-main-offer-text__img {
      position: absolute;
      z-index: 1;
-     opacity: 0;
      transition: all .3s ease-in-out 3s;
 
      @media (max-width: 500px) {
@@ -1712,15 +1715,12 @@ div.menu__link:hover {
      }
 }
 
-.page-main-offer-text__img-active {
-     opacity: 1;
-     transition: all .3s ease-in-out 3s;
-}
-
 .page-main-offer-text__img-1 {
-     bottom: vw(-180, 1670);
-     left: 0;
+     opacity: 0;
+     bottom: vw(680, 1670);
+     left: vw(70, 1670);
      width: vw(400, 1670);
+     z-index: 2;
 
      @media (max-width: 992px) {
           display: none;
@@ -1728,9 +1728,11 @@ div.menu__link:hover {
 }
 
 .page-main-offer-text__img-2 {
+     opacity: 0;
      top: 0;
-     right: 0;
+     right: vw(70, 1670);
      width: vw(310, 1670);
+     z-index: 2;
 
      @media (max-width: 500px) {
           top: vw(120, 500);
@@ -1760,7 +1762,7 @@ div.menu__link:hover {
      transition: all .3s ease-in-out;
 }
 
-.gallery-img__img-element:hover {
+.gallery-img__img-element-active {
      height: vw(830, 1670);
      transition: all .3s ease-in-out;
 }
@@ -4149,7 +4151,8 @@ div.menu__link:hover {
      }
 }
 
-.subuffer-apollo550__text, .sub-apollo550__text {
+.subuffer-apollo550__text,
+.sub-apollo550__text {
      transform: translateY(200px);
 
      @media (max-width : 992px) {
